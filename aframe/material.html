@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@4.3.1/dist/aframe-layout-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #999" >
+
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+
+      <a-assets>
+        <img id="texture2" src="texture2.png">
+      </a-assets>
+
+      <a-entity layout="type: line; margin: 1.5" position="-1.5 1.75 -2">
+        <a-plane material="src: #texture2"></a-plane>
+        <a-plane material="src: #texture2"></a-plane>
+        <a-plane material="src: #texture2"></a-plane>
+      </a-entity>
+
+      <a-entity link="href: world.html;">
+        <a-box  position="3 .75 -1.5" width=".25" height=".25" depth=".25" ></a-box>
+      </a-entity>
+      <!-- particles and fog -->
+     <a-entity link="href: environment.html;">
+       <a-box  position="3 .75 0" width=".25" height=".25" depth=".25" ></a-box>
+     </a-entity>
+      <!-- physics -->
+    <a-entity link="href: physics.html;">
+      <a-box  position="3 .75 0.5" width=".25" height=".25" depth=".25" ></a-box>
+    </a-entity>
+    <!-- texture materials lights -->
+   <a-entity link="href: material.html;">
+     <a-box  position="3 .75 1" width=".25" height=".25" depth=".25"></a-box>
+   </a-entity>
+   <!-- sound -->
+    <a-entity link="href: sound.html;">
+      <a-box  position="3 .75 -0.5" width=".25" height=".25" depth=".25" ></a-box>
+    </a-entity>
+
+    <a-entity link="href: animation.html;">
+     <a-box  position="3 .75 -1" width=".25" height=".25" depth=".25" ></a-box>
+   </a-entity>
+
+       <a-plane position="0 0 0" rotation="-90 0 0" width="400" height="400" color="#333"></a-plane>
+
+    </a-scene>
+    <script src="material.js"></script>
+  </body>
+</html>

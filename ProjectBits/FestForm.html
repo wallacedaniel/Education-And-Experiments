@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/fest-form.css" />
+  </head>
+  <body>
+	<div class="container-fluid">
+		<div class="row">
+			<form id="vendor" class="col-12" action="" method="">
+				<h2>Vendor Jury Form</h2>
+				
+				<div class="form-group">
+					<label for="fname-input">First Name</label>
+					<input class="form-control" type="text" name="fname" id="fname-input" maxlength="40" required > 
+				</div>
+				
+				<div class="form-group">
+					<label for="lname-input">Last Name</label>
+					<input class="form-control" type="text" name="lname" id="lname-input" maxlength="40" required > 
+				</div>
+				
+				<div class="form-group">
+					<label for="booth-input">Booth Name</label>
+					<input class="form-control" type="text" name="booth" id="booth-input" maxlength="100" required > 
+				</div>
+				
+				<div class="form-group">
+					<label for="desc-input">Please briefly describe your product and your business or brand.</label>
+					<textarea class="form-control textarea"  name="desc" id="desc-input" rows="6" maxlength="500" required ></textarea>
+				</div>
+				<div class="form-group">
+					<label for="site-input">Do you have a website or link we may visit?</label>
+					<input class="form-control" type="text" name="site" id="site-input" maxlength="50"> 
+				</div>
+				
+				<fieldset class="form-group">
+					<legend>What type is your booth?</legend>
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input selected" name="type" id="arts-radio" value="arts" checked >
+						Arts and Crafts						
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="type" id="clothing-radio" value="clothing">
+						Clothing
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="type" id="food-radio" value="food">
+						Food and Beverage
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="type" id="edu-radio" value="edu">
+						Education or Performance
+					  </label>
+					</div>
+				</fieldset>
+			
+			  
+				<div class="form-group">
+					<label for="input-email">Email address</label>
+					<input class="form-control" type="email"  name="email" id="input-email" required >
+				</div>
+			
+				<div class="form-group">
+					<label for="phone-input">Phone Number</label>
+					<input class="form-control" type="text"  name="phone" id="phone-input" maxlength="30" required >
+				</div>
+				
+				<fieldset class="form-group">
+					<legend>What size booth do you require?</legend>         
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input selected" name="size" id="sm-radio" value="sm" checked>
+						Small 4 x 6
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="size" id="med-radio" value="med">
+						Medium 6 x 8
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="size" id="lg-radio" value="lg">
+						Large 8 x 10
+					  </label>
+					</div>
+				</fieldset>
+				
+				<fieldset class="form-group">
+					<legend>Do you require electricity?</legend>
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input selected" name="elec" id="yes-elec-radio" value="yes" checked>
+						Yes
+					  </label>
+					</div>					
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input" name="elec" id="no-elec-radio" value="no">
+						No
+					  </label>
+					</div>
+				</fieldset>
+				
+				<fieldset class="form-group">
+					<legend>Have you vended with us before?</legend>         
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input selected" name="vendorHist" id="yes-vend-radio" value="yes" checked>
+						Yes
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="vendorHist" id="no-vend-radio" value="no">
+						No
+					  </label>
+					</div>
+				</fieldset>
+				
+				<div class="form-group">
+					<label for="desc-input">How did you hear about us?</label>
+					<textarea class="form-control" name="source" id="desc-input" rows="2" maxlength="100"></textarea>
+				</div>
+				<!--back to submit-->
+				<button type="button" class="btn btn-primary" id="vendor-submit">Submit</button>
+			
+			</form>
+			
+			
+			
+			<form id="mailing-list" class="col-12" action="" method="">
+				<h2>Mailing List</h2>
+				<div class="form-group">
+					<label for="mail-fname-input">First Name</label>
+					<input class="form-control" type="text" name="mailFname" id="mail-fname-input" maxlength="40" required > 
+				</div>
+				
+				<div class="form-group">
+					<label for="mail-lname-input">Last Name</label>
+					<input class="form-control" type="text" name="mailLname" id="mail-lname-input" maxlength="40"  required > 
+				</div>
+				
+				<div class="form-group">
+					<label for="mail-input-email">Email address</label>
+					<input class="form-control" type="email"  name="mailEmail" id="mail-input-email"  required >
+				</div>
+				
+				<div class="form-check">
+				  <label class="form-check-label">
+					<input type="checkbox" class="form-check-label" id="mailing-check" name="promo">
+					Would you like to receive promotional items as well?
+				  </label>
+				</div>		
+				<div class="additional-info">
+					<div class="form-group">
+						<label for="address1-input">Street Address</label>  
+						<input class="form-control" type="text" name="address1" id="address1-input" disabled maxlength="80">
+						<input class="form-control address2" type="text" name="address2" id="address2-input" disabled  maxlength="80">
+					</div>
+					
+					<div class="form-group">
+						<label for="city-input">City</label>
+						<input class="form-control" type="text" name="city" id="city-input" disabled maxlength="50">
+					</div>
+					
+					<div class="form-group">
+						<label for="state-select">State</label>
+						<select class="form-control" id="state-select" name="state" disabled>
+							<option value="select">Select</option>
+							<option>Alabama</option>
+							<option>Alaska</option>
+							<option>Arizona</option>
+							<option>Arkansas</option>
+							<option>California</option>
+							<option>Colorado</option>
+							<option>Connecticut</option>
+							<option>Delaware</option>
+							<option>Florida</option>
+							<option>Georgia</option>
+							<option>Hawaii</option>
+							<option>Idaho</option>
+							<option>Illinois</option>
+							<option>Indiana</option>
+							<option>Iowa</option>
+							<option>Kansas</option>
+							<option>Kentucky</option>
+							<option>Louisiana</option>
+							<option>Maine</option>
+							<option>Maryland</option>
+							<option>Massachusetts</option>
+							<option>Michigan</option>
+							<option>Minnisota</option>
+							<option>Mississippi</option>
+							<option>Missouri</option>
+							<option>Montana</option>
+							<option>Nebraska</option>
+							<option>Nevada</option>
+							<option>New Hampshire</option>
+							<option>New Jersey</option>
+							<option>New Mexico</option>
+							<option>New York</option>
+							<option>North Carolina</option>
+							<option>North Dakota</option>
+							<option>Ohio</option>
+							<option>Oklahoma</option>
+							<option>Oregon</option>
+							<option>Pennsylvania</option>
+							<option>Rhode Island</option>
+							<option>South Carolina</option>
+							<option>South Dakota</option>
+							<option>Tennessee</option>
+							<option>Texas</option>
+							<option>Utah</option>
+							<option>Vermont</option>
+							<option>Virginia</option>
+							<option>Washington</option>
+							<option>West Virginia</option>
+							<option>Wisconsin</option>
+							<option>Wyoming</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="zip-input">Zip Code</label>
+						<input class="form-control" type="text" name="zip" id="zip-input" disabled maxlength="10">
+					</div>
+				</div>
+				
+				<!--back to submit-->
+				<button type="button" class="btn btn-primary" id="mailing-submit">Submit</button>
+			
+			</form>
+		</div>
+    </div>
+	
+	
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/fest-form.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+  </body>
+</html>
+
+

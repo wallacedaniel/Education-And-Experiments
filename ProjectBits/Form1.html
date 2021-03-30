@@ -1,0 +1,171 @@
+<!--BootStrap
+bootstrap-4.0.0-alpha.6
+
+Starter Template with CDN -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style1" />
+  </head>
+  <body>
+  
+    <h1>Registration Form</h1>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<form id="form1" class="col-12" action="" method="">
+			
+				<h2>Enter Your Information<span> (Already registered? <a href="#">Sign In</a>)</span></h2>
+				
+				<p>Please enter your U.S. address and email address to create your account</p>
+				
+				<div class="form-group">
+					<label for="fname-input">First Name</label>
+					<input class="form-control" type="text" value="" id="fname-input"> 
+				</div>
+				
+				<div class="form-group">
+					<label for="lname-input">Last Name</label>
+					<input class="form-control" type="text" value="" id="lname-input"> 
+				</div>
+				
+				<div class="form-group">
+					<label for="address1-input">Street Address</label>
+					<input class="form-control" type="text" value="" id="address1-input">
+					<input class="form-control" type="text" value="" id="address2-input"> 
+				</div>
+				
+				<div class="form-group">
+				  <label for="city-input">City</label>
+				 <input class="form-control" type="text" value="" id="city-input"> 
+				</div>
+				
+				<div class="form-group">
+					<label for="state-select">State</label>
+					<select class="form-control" id="state-select">
+						<option selected>Select</option>
+						<option>Alabama</option>
+						<option>Alaska</option>
+						<option>Arizona</option>
+						<option>Arkansas</option>
+						<option>California</option>
+						<option>Colorado</option>
+						<option>Connecticut</option>
+						<option>Delaware</option>
+						<option>Florida</option>
+						<option>Georgia</option>
+						<option>Hawaii</option>
+						<option>Idaho</option>
+						<option>Illinois</option>
+						<option>Indiana</option>
+						<option>Iowa</option>
+						<option>Kansas</option>
+						<option>Kentucky</option>
+						<option>Louisiana </option>
+						<option>Maine</option>
+						<option>Maryland</option>
+						<option>Massachusetts </option>
+						<option>Michigan</option>
+						<option>Minnisota</option>
+						<option>Mississippi </option>
+						<option>Missouri</option>
+						<option>Montana</option>
+						<option>Nebraska</option>
+						<option>Nevada</option>
+						<option>New Hampshire</option>
+						<option>New Jersey</option>
+						<option>New Mexico</option>
+						<option>New York</option>
+						<option>North Carolina</option>
+						<option>North Dakota</option>
+						<option>Ohio</option>
+						<option>Oklahoma</option>
+						<option>Oregon</option>
+						<option>Pennsylvania</option>
+						<option>Rhode Island </option>
+						<option>South Carolina</option>
+						<option>South Dakota</option>
+						<option>Tennessee</option>
+						<option>Texas</option>
+						<option>Utah </option>
+						<option>Vermont</option>
+						<option>Virginia </option>
+						<option>Washington</option>
+						<option>West Virginia</option>
+						<option>Wisconsin</option>
+						<option>Wyoming</option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+				  <label for="zip-input">Zip Code</label>
+				 <input class="form-control" type="text" value="" id="zip-input"> 
+				</div>
+				
+				<div class="form-group">
+					<label for="co-input">Country or Region</label>
+					<input class="form-control" type="text" value="United States" id="co-input" disabled aria-describedby="co-msg"> 
+					<small id="co-msg" class="form-text text-muted">U.S. addresses only, please.</small>
+				</div>
+				
+				<div class="form-group">
+					<label for="phone-input1" aria-describedby="phone-msg">Phone Number</label>
+					<span>(</span><input class="form-control" type="number" value="" id="phone-input1" maxlength="3"><span>)</span>
+					<input class="form-control" type="number" value="" id="phone-input2" maxlength="3"><span>-</span>
+					<input class="form-control" type="number" value="" id="phone-input3" maxlength="4">
+					<label for="ext-input">ext: </label>
+					<input class="form-control" type="number" value="" id="ext-input" maxlength="4">
+					<small id="phone-msg" class="form-text text-muted">Needed if there are questions about your order.</small>
+				</div>
+				
+				<div class="form-group">
+					<small id="valid-email" class="form-text text-muted">A valid email address is required to communicate with you.</small>
+					<label for="input-email">Email address</label>
+					<input type="email" class="form-control" id="input-email" aria-describedby="valid-email">
+				</div>
+				
+				<div class="form-group">
+					<label for="inputEmail2">Re-enter Email address</label>
+					<input type="email" class="form-control" id="inputEmail2">
+				</div>
+			  
+				<div class="form-group">
+					<label for="input-password">Create Password</label>
+					<input type="password" class="form-control" id="input-password" aria-describedby="create-pass">
+					<small id="create-pass" class="form-text text-muted">Must be at least 6 characters, including a number or special character.</small>
+				</div>
+				
+				<div class="form-group">
+					<label for="input-password2">Re-enter Password</label>
+					<input type="password" class="form-control" id="input-password2">
+				</div>
+				
+				<div class="form-group">
+					<label for="pass-strength">How secure is your password?</label>
+					<input type="range" name="points" min="0" max="10" class="form-control" id="pass-strength" aria-describedby="strong-pass">
+					<small id="strong-pass" class="form-text text-muted">Check your password strength - the higher the better.</small>
+				</div>
+			  
+				<p>By clicking "Register" you agree to our <a href="#">privacy policy</a> and <a href="#">terms of use.</a> You also agree to be contacted fo marketing purposes, but you can change your notification preferences in your account.</p>
+			  
+				<button type="submit" class="btn btn-primary">Register</button>
+			  
+			</form>
+		</div>
+    </div>
+	
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+

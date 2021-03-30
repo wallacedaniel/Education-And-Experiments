@@ -1,0 +1,501 @@
+/*
+color						
+opacity
+background
+border
+border-radius
+box-shadow	
+margin
+width
+position
+padding 
+float
+display
+line-height
+text-align		
+text-decoration
+text-shadow	
+font-family
+font-size
+font-weight */
+
+
+body {
+	background:;
+}
+
+h1 {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;	
+}
+
+h2 {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+h3 {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+h4 {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+h5 {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+h6 {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+a {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+form {
+	background:;
+}
+
+label {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="text"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="radio"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="checkbox"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+
+input[type="time"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="date"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="datetime-local"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="week"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="month"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="number"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="range"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="email"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="search"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="url"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="file"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="image"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="submit"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="reset"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[type="button"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[name="country_code"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+input[name="telephone"] {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+option {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+select {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+textarea {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+.container-fluid {
+	background:;
+}
+
+.row {
+	background:;
+}
+
+.col-12 {
+	background:;
+}	
+
+.col-sm-12 {
+	background:;
+}	
+
+.col-md-12 {
+	background:;
+}	
+
+.col-lg-12 {
+	background:;
+}
+
+.col-xl-12 {
+	background:;
+}
+
+.form-group {
+	background:;
+}
+
+.form-control {
+	background:;
+}
+	
+.form-text {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+.form-control-file {
+	background:;
+}
+	.
+.form-check  {
+	background:;
+}
+
+.form-check-label {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+.form-check-input {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+.col-form-label {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+.btn {
+	background:;
+	font-family:;
+	font-size:;
+	font-weight:;
+	line-height:;
+	text-shadow:;
+	text-align:;
+	text-decoration:;
+}
+
+.btn-primary  {
+	background:;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

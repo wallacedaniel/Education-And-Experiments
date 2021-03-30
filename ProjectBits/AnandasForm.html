@@ -1,0 +1,199 @@
+<!--BootStrap
+bootstrap-4.0.0-alpha.6
+
+Starter Template with CDN -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/anandas-form.css" />
+  </head>
+  <body>
+ 
+	<div class="container-fluid">
+		<div class="row">
+			<form id="contact" class="col-12" action="" method="">
+			
+				<h2>Contact me for individual or group lessons</h2>
+				
+				<div class="form-group">
+					<label for="fname-input">First Name</label>
+					<input class="form-control" type="text" name="fname" id="fname-input" required maxlength="40"> 
+				</div>
+				
+				<div class="form-group"> 
+					<label for="lname-input">Last Name</label>
+					<input class="form-control" type="text" name="lname" id="lname-input" required maxlength="40"> 
+				</div>
+				
+				<div class="form-group">
+					<label for="email-input">Email address</label>
+					<input class="form-control" type="email" name="email" id="email-input" required>
+				</div>
+			  
+				<div class="form-group">
+					<label for="phone-input">Phone Number</label>
+					<input class="form-control" type="text" name="phone" id="phone-input" required maxlength="30">
+				</div>
+				
+				<fieldset class="form-group">
+					<legend>How do you prefer to be contacted?</legend>
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input selected" name="contact" id="phone-radio" value="phone" checked>
+						Phone
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="contact" id="text-radio" value="text">
+						Text
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="contact" id="email-radio" value="email">
+						Email
+					  </label>
+					</div>
+				</fieldset>
+				
+				<fieldset class="form-group">
+					<legend>Is this for an individual or group lesson?</legend>
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input selected" name="qty" id="individual-radio" value="individual" checked>
+						Individual
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="qty" id="group-radio" value="group">
+						Group
+					  </label>
+					</div>
+				</fieldset>
+			
+				<div class="form-group">
+					<label for="qty-input">How many in your group?</label>
+					<input class="form-control" type="number" name="quantity" id="qty" disabled min="1" max="20"><!--required when enabled - Set to 1 if individual checked-->
+				</div>
+			
+		
+				<fieldset class="form-group">
+					<legend>What style lesson are you most interested in?</legend>
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input selected" name="style" id="ashtanga-radio" value="ashtanga" checked>
+						Ashtanga
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="style" id="hatha-radio" value="hatha">
+						Hatha
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="style" id="iyangar-radio" value="iyangar">
+						Iyangar
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="style" id="unknown-radio" value="unknown">
+						I don't know
+					  </label>
+					</div>
+				</fieldset>
+				
+				<fieldset class="form-group">
+					<legend>Which of my studio locations are you able to visit?</legend>
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="checkbox" class="form-check-input selected" name="loc1" id="loc-1-check" value="loc-1" checked>
+						Location 1
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input" name="loc2" id="loc-2-check" value="loc-2">
+						Location 2
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input" name="loc3" id="loc-3-check" value="loc-3">
+						Location 3
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input" name="loc4" id="loc-4-check" value="loc-4">
+						Location 4
+					  </label>
+					</div>
+				</fieldset>
+				
+				When are you hoping to make an appointment?
+				Calendar selector
+				Note: this selection does not represent a booking. I will contact you promptly.
+				
+				<fieldset class="form-group">
+					<legend>What is your experience level with yoga?</legend>
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input selected" name="exp" id="beg-radio" value="beg" checked>
+						Beginning
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="exp" id="int-radio" value="int">
+						Intermediate
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="exp" id="adv-radio" value="adv">
+						Advanced
+					  </label>
+					</div>
+				</fieldset>
+
+				<div class="form-group">
+					<label for="hopes-input">Tell me about you and what you hope to accomplish in your practice.</label>
+					<textarea class="form-control form-textarea" name="hopes" id="hopes-input" rows="6" maxlength="500"></textarea>
+				</div>
+				
+				<div class="form-group">
+					<label for="needs-input">Do you or does anyone in your group have physical limitations or special needs?</label>
+					<textarea class="form-control form-textarea" name="needs" id="needs-input" rows="6" maxlength="500"></textarea>
+				</div>
+				
+				<div class="form-group">
+					<label for="source-input">How did you find me?</label>
+					<textarea class="form-control form-textarea" name="source" id="source-input" rows="2" maxlength="100"></textarea>
+				</div>
+				<!--back to submit-->
+				<button type="button" class="btn btn-primary" id="contact-submit">Submit</button>
+
+			</form>
+		</div>
+    </div>
+	
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/anandas-form.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+  </body>
+</html>
+
+

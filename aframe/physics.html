@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+  </head>
+  <body>
+    <a-scene physics background="color: purple" >
+
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+
+      <a-entity link="href: world.html;">
+        <a-box  position="3 .75 -1.5" width=".25" height=".25" depth=".25" ></a-box>
+      </a-entity>
+      <!-- particles and fog -->
+     <a-entity link="href: environment.html;">
+       <a-box  position="3 .75 0" width=".25" height=".25" depth=".25" ></a-box>
+     </a-entity>
+      <!-- physics -->
+    <a-entity link="href: physics.html;">
+      <a-box  position="3 .75 0.5" width=".25" height=".25" depth=".25" ></a-box>
+    </a-entity>
+    <!-- texture materials lights -->
+   <a-entity link="href: material.html;">
+     <a-box  position="3 .75 1" width=".25" height=".25" depth=".25"></a-box>
+   </a-entity>
+   <!-- sound -->
+    <a-entity link="href: sound.html;">
+      <a-box  position="3 .75 -0.5" width=".25" height=".25" depth=".25" ></a-box>
+    </a-entity>
+
+    <a-entity link="href: animation.html;">
+     <a-box  position="3 .75 -1" width=".25" height=".25" depth=".25" ></a-box>
+   </a-entity>
+
+
+       <a-plane static-body position="0 0 0" rotation="-90 0 0" width="400" height="400" color="#333"></a-plane>
+
+
+    </a-scene>
+    <script src="js/physics.js"></script>
+  </body>
+</html>

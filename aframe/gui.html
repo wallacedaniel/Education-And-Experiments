@@ -1,0 +1,125 @@
+
+
+
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene background="color: #999" >
+
+      <!-- Camera + cursor. -->
+    		<a-entity id="cameraRig" position="0 1.6 0">
+    			<a-camera look-controls wasd-controls position="0 0 0">
+    				<a-gui-cursor id="cursor"
+    						  raycaster="objects: [gui-interactable]"
+    						  fuse="true" fuse-timeout="2000"
+    						  design="ring"
+    				>
+    				</a-gui-cursor> <!-- /cursor -->
+    			</a-camera> <!-- /camera -->
+    		</a-entity>
+
+
+
+
+        <a-gui-flex-container
+	flex-direction="column" justify-content="center" align-items="normal" component-padding="0.1" opacity="0.7" width="3.5" height="4.5"
+	position="2 2.5 -4" rotation="0 0 0"
+>
+
+
+
+
+
+        <a-gui-button
+          width="2.5" height="0.75"
+          onclick="buttonActionFunction" key-code="32"
+          value="test button"
+          font-family="Arial"
+          margin="0 0 0.05 0"
+        >
+        </a-gui-button>
+
+        <a-gui-input id="test_input"
+     width="4" height="0.7"
+     onclick="testInputAction"
+     value="Starting value"
+     font-size="160px"
+     font-color="#212121"
+     border-color="#212121"
+     border-hover-color="#424242"
+     background-color="#FAFAFA"
+     hover-color="#F5F5F5"
+     active-color="#FFEB3B"
+>
+</a-gui-input>
+
+<a-gui-label
+  width="2.5" height="0.75"
+  value="label text"
+  font-family="Arial"
+  margin="0 0 0.05 0"
+>
+</a-gui-label>
+
+<a-gui-slider
+  width="2.5" height="0.75"
+  onclick="slideActionFunction"
+  percent="0.29"
+  margin="0 0 0.05 0"
+>
+</a-gui-slider>
+
+
+
+
+
+
+</a-gui-flex-container>
+
+
+
+
+      <a-assets>
+        <img id="texture2" src="texture2.png">
+      </a-assets>
+
+      <a-entity layout="type: line; margin: 1.5" position="-1.5 1.75 -2">
+        <a-plane material="src: #texture2"></a-plane>
+        <a-plane material="src: #texture2"></a-plane>
+        <a-plane material="src: #texture2"></a-plane>
+      </a-entity>
+
+      <a-entity link="href: world.html;">
+        <a-box  position="3 .75 -1.5" width=".25" height=".25" depth=".25" ></a-box>
+      </a-entity>
+      <!-- particles and fog -->
+     <a-entity link="href: environment.html;">
+       <a-box  position="3 .75 0" width=".25" height=".25" depth=".25" ></a-box>
+     </a-entity>
+      <!-- physics -->
+    <a-entity link="href: physics.html;">
+      <a-box  position="3 .75 0.5" width=".25" height=".25" depth=".25" ></a-box>
+    </a-entity>
+    <!-- texture materials lights -->
+   <a-entity link="href: material.html;">
+     <a-box  position="3 .75 1" width=".25" height=".25" depth=".25"></a-box>
+   </a-entity>
+   <!-- sound -->
+    <a-entity link="href: sound.html;">
+      <a-box  position="3 .75 -0.5" width=".25" height=".25" depth=".25" ></a-box>
+    </a-entity>
+
+    <a-entity link="href: animation.html;">
+     <a-box  position="3 .75 -1" width=".25" height=".25" depth=".25" ></a-box>
+   </a-entity>
+
+       <a-plane position="0 0 0" rotation="-90 0 0" width="400" height="400" color="#333"></a-plane>
+
+    </a-scene>
+    <script src="material.js"></script>
+  </body>
+</html>

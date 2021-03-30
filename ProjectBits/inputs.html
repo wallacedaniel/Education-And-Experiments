@@ -1,0 +1,235 @@
+	<!--
+	Form Elements
+	
+	<form>		Defines an HTML form for user input
+	<input>		Defines an input control
+	<textarea>	Defines a multiline input control (text area)
+	<label>		Defines a label for an <input> element
+	<fieldset>	Groups related elements in a form
+	<legend>	Defines a caption for a <fieldset> element
+	<select>	Defines a drop-down list
+	<optgroup>	Defines a group of related options in a drop-down list
+	<option>	Defines an option in a drop-down list
+	<button>	Defines a clickable button
+	<datalist>	Specifies a list of pre-defined options for input controls
+	<keygen>	Defines a key-pair generator field (for forms)
+	<output>	Defines the result of a calculation
+	
+	<form> Element Attributes
+	
+	accept-charset	Specifies the charset used in the submitted form (default: the page charset).
+	action		Specifies an address (url) where to submit the form (default: the submitting page).
+	autocomplete	Specifies if the browser should autocomplete the form (default: on).
+	enctype		Specifies the encoding of the submitted data (default: is url-encoded).
+	method		Specifies the HTTP method used when submitting the form (default: GET).
+	name		Specifies a name used to identify the form (for DOM usage: document.forms.name).
+	novalidate	Specifies that the browser should not validate the form.
+	target		Specifies the target of the address in the action attribute (default: _self).
+	
+	Input Attributes
+	
+	accept			(file_extension audio/*video/*image/* media_type) Specifies the types of files that the server accepts (only for type="file")
+	alt				Specifies an alternate text for images (only for type="image")
+	autocomplete 	(on off)	Specifies whether an <input> element should have autocomplete enabled
+	autofocus		Specifies that an <input> element should automatically get focus when the page loads
+	checked			Specifies that an <input> element should be pre-selected when the page loads (for type="checkbox" or type="radio")
+	dirname			(inputname.dir)	Specifies that the text direction will be submitted	
+	disabled		Specifies that an <input> element should be disabled
+	form			(form_id)	Specifies one or more forms the <input> element belongs to
+	formaction		(URL)	Specifies the URL of the file that will process the input control when the form is submitted (for type="submit" and type="image")
+	formenctype		(application/x-www-form-urlencoded multipart/form-data text/plain) Specifies how the form-data should be encoded when submitting it to the server (for type="submit" and type="image")
+	formmethod		(get post) Defines the HTTP method for sending data to the action URL (for type="submit" and type="image")
+	formnovalidate 	Defines that form elements should not be validated when submitted
+	formtarget		(_blank _self _parent _top framename) Specifies where to display the response that is received after submitting the form (for type="submit" and type="image")
+	height	pixels	Specifies the height of an <input> element (only for type="image")
+	list			(datalist_id) Refers to a <datalist> element that contains pre-defined options for an <input> element	
+	min and max		(number date) Specifies a minimum/max value for an <input> element
+	maxlength		Specifies the maximum number of characters allowed in an <input> element
+	multiple    	Specifies that a user can enter more than one value in an <input> element
+	name			Specifies the name of an <input> element
+	pattern 		(regexp) Specifies a regular expression that an <input> element's value is checked against
+	placeholder		Specifies a regular expression that an <input> element's value is checked against
+	readonly	Specifies that an input field is read-only
+	required	Specifies that an input field must be filled out before submitting the form
+	size		number	Specifies the width, in characters, of an <input> element
+	src			URL	Specifies the URL of the image to use as a submit button (only for type="image")
+	step		number	Specifies the legal number intervals for an input field       
+	value		Specifies the value of an <input> element
+	width		pixels	Specifies the width of an <input> element (only for type="image")
+	
+	type
+		button
+		checkbox
+		color
+		date 
+		datetime-local 
+		email 
+		file
+		hidden
+		image
+		month 
+		number 
+		password
+		radio
+		range 
+		reset
+		search
+		submit
+		tel
+		text
+		time 
+		url
+		week
+
+
+
+	Input Restrictions
+	
+	disabled	Specifies that an input field should be disabled
+	max			Specifies the maximum value for an input field
+	maxlength	Specifies the maximum number of character for an input field
+	min			Specifies the minimum value for an input field
+	pattern		Specifies a regular expression to check the input value against
+	readonly	Specifies that an input field is read only (cannot be changed)
+	required	Specifies that an input field is required (must be filled out)
+	size		Specifies the width (in characters) of an input field
+	step		Specifies the legal number intervals for an input field
+	value		Specifies the default value for an input field
+	
+
+	
+	Each input field must have a name attribute to be submitted.
+
+	-->
+	
+
+	<form action="/action_page.php" method="get">	<!--method="set"-->
+
+		<fieldset>
+			<legend>Personal information:</legend>
+			
+			<!--text-->
+			<input type="text" name="fname" value="Daniel" size="40" placeholder="First name"><br>
+				
+			<!--radio-->  
+			<input type="radio" name="gender" value="male" onclick="returnVals()"> Male<br>
+			
+			<label class="form-check-label">
+			<input type="radio" class="form-check-label" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+
+			<!--checkbox-->
+			<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+			
+			<label class="form-check-label">
+			<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+			
+			<!--time-->
+			<input type="time" name="usr_time">
+			
+			<label for="example-time-input" >Time</label>  													<!--class="col-form-label" -->
+			<input class="form-control" type="time" value="13:45:00" id="example-time-input">
+			
+			<!--date-->
+			<input type="date" name="bday" min="2000-01-02" max="1979-12-31">
+			
+			<label for="example-date-input" Date</label>
+			<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+		
+			<!--datetime-local-->
+			<input type="datetime-local" name="bdaytime">
+			
+			<label for="example-datetime-local-input">Date and time</label>
+			<input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+			
+			<!--week-->
+			<input type="week" name="week_year">
+			
+			<label for="example-week-input" class="col-2 col-form-label">Week</label>
+			<input class="form-control" type="week" value="2011-W33" id="example-week-input">
+			
+			<!--month-->
+			<input type="month" name="bdaymonth">
+			
+			<label for="example-month-input" class="col-2 col-form-label">Month</label>
+			<input class="form-control" type="month" value="2011-08" id="example-month-input">
+			
+			<!--number-->
+			<input type="number" name="points" min="0" max="100" step="10" value="30">
+			
+			<label for="example-number-input" class="col-2 col-form-label">Number</label>
+			<input class="form-control" type="number" value="42" id="example-number-input">
+			
+			<!--range-->
+			<input type="range" name="points" min="0" max="10">
+			
+			<!--email-->
+			<input type="email" name="user_email">
+			
+			<label for="example-email-input" class="col-2 col-form-label">Email</label>
+			<input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+			
+			<!--telephone-->
+			<input type="text" name="telephone">
+
+			<!--search-->
+			<input type="search" name="googlesearch">
+			
+			<label for="example-search-input" class="col-2 col-form-label">Search</label>
+				<input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+
+			<!--url-->
+			<input type="url" name="homepage">
+			
+			<label for="example-url-input" class="col-2 col-form-label">URL</label>
+			<input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
+
+			<!--password-->
+			<label for="example-password-input" class="col-2 col-form-label">Password</label>
+			<input class="form-control" type="password" value="hunter2" id="example-password-input">
+			
+			<!--file-->
+			<input type="file" name="img" multiple>
+			
+			<!--text - country code-->
+			<input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+			
+			<!--image-->
+			<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+			
+			<!--submit-->  
+			<input type="submit" value="Submit">
+			
+			<!--reset-->
+			<input type="reset" value="Reset">
+			
+			<!--button-->
+			<input type="button" onclick="alert('Hello World!')" value="Click Me!">Click Me!</button>
+			
+			<!--textarea-->
+			<textarea name="message" rows="10" cols="30">
+				The cat was playing in the garden.
+			</textarea>
+			
+			<select name="cars">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+			</select>
+			
+			<label for="exampleSelect1">Example select</label>
+			<select class="form-control" id="exampleSelect1">
+			  <option>1</option>
+			  <option>2</option>
+			</select>
+			
+		</fieldset>
+	  
+	</form>
+
+<!-- <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+		<input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input"> -->
+		
+<!-- <label for="example-color-input" class="col-2 col-form-label">Color</label>
+		<input class="form-control" type="color" value="#563d7c" id="example-color-input"> -->
+
+					
+		

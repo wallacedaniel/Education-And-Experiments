@@ -1,0 +1,177 @@
+
+Find the Point
+https://www.hackerrank.com/challenges/find-point/submissions/code/47360386
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+//int n = 1;
+//int[] coordinates = new int[]{0,0,1,1};
+//reflection point formula r = 2q−p
+class Solution {
+    static void Main(String[] args) {
+        int n = Convert.ToInt32(Console.ReadLine());
+        int[] reflectionPoint = new int[2];
+        
+        for (int i = 0; i < n; i++)
+        {
+            string[] ar_temp = Console.ReadLine().Split(' ');
+            int[] coordinates = Array.ConvertAll(ar_temp,Int32.Parse);
+            reflectionPoint[0] = (2 * coordinates[2]) - coordinates[0];
+            reflectionPoint[1] = (2 * coordinates[3]) - coordinates[1];
+
+            Console.WriteLine(reflectionPoint[0] + " " + reflectionPoint[1]);
+        }
+    }
+}
+
+
+Maximum Draws
+https://www.hackerrank.com/challenges/maximum-draws/submissions/code/42776607
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+class Solution {
+    static void Main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
+        int n = Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < n; i++)
+        {
+            int pairs = Convert.ToInt32(Console.ReadLine());
+            int guesses = ((2 * pairs) / 2) + 1;
+            Console.WriteLine(guesses.ToString());
+        }
+    }
+}
+
+
+Handshake
+https://www.hackerrank.com/challenges/handshake/problem
+
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+class Solution {
+
+    static void Main(String[] args) {
+        int T = Convert.ToInt32(Console.ReadLine());
+        for(int a0 = 0; a0 < T; a0++){
+            int N = Convert.ToInt32(Console.ReadLine());
+
+            int shakes = 0;
+            for (int i = 1; i <= N; i++)
+            {
+                shakes += N - i;
+            }
+            Console.WriteLine(shakes.ToString());
+        }
+    }
+}
+
+
+
+Army Game
+https://www.hackerrank.com/challenges/game-with-cells/problem
+
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+class Solution {
+
+    static void Main(String[] args) {
+        string[] tokens_n = Console.ReadLine().Split(' ');
+        int n = Convert.ToInt32(tokens_n[0]);
+        int m = Convert.ToInt32(tokens_n[1]);
+        int drop = 0;
+        
+        if(n == 1 && m % 2 == 0){
+            drop = m/2;                 
+        }
+        else if(n == 1 && m % 2 != 0){
+            drop = m/2 + 1;                 
+        }
+        else if(m == 1 && n % 2 != 0){
+            drop = m/2 + 1;                 
+        }
+        else if(m == 1 && n % 2 != 0){
+            drop = m/2 + 1;                 
+        }
+        
+        if(n % 2 == 0 && m % 2 == 0){
+            drop = (n * m)/4;    
+        }
+        else if(n % 2 != 0 && m % 2 != 0){
+            drop = ((n + 1) * (m + 1)) / 4;    
+        }
+  
+        else if(n % 2 == 0 && m % 2 != 0){
+            drop = (n / 2) * ((m + 1) / 2);    
+        }
+        
+        else if(n % 2 != 0 && m % 2 == 0){
+            drop = (m / 2) * ((n + 1) / 2);    
+        }
+        Console.WriteLine(drop.ToString());
+    }
+}
+
+
+Points on a Line
+https://www.hackerrank.com/challenges/points-on-a-line/problem
+
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+class Solution {
+
+    static void Main(String[] args) {
+        int n = Convert.ToInt32(Console.ReadLine());
+        int[] checkX = new int[n];
+        int[] checkY = new int[n];
+        for(int a0 = 0; a0 < n; a0++){
+            string[] tokens_x = Console.ReadLine().Split(' ');
+            int x = Convert.ToInt32(tokens_x[0]);
+            int y = Convert.ToInt32(tokens_x[1]);
+            checkX[a0] = x;
+            checkY[a0] = y;
+        }
+        
+        int xCompare = checkX[0];
+        bool detectXChange = false;
+        for (int i = 0; i < checkX.Length; i++)
+        {
+            if(xCompare != checkX[i])
+            {
+                detectXChange = true;
+            }
+        }
+
+        int yCompare = checkY[0];
+        bool detectYChange = false;
+        for (int i = 0; i < checkY.Length; i++)
+        {
+            if (yCompare != checkY[i])
+            {
+                detectYChange = true;
+            }
+        }
+
+        if (detectXChange == false || detectYChange == false)
+        {
+            Console.Write("YES");   
+        }
+        else
+        {
+            Console.Write("NO");
+        }
+    }
+}
+

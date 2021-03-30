@@ -1,0 +1,30 @@
+<?php
+	while(have_posts()) : the_post(); ?>
+	
+	<article>
+		<?php if (is_single()): ?>
+			<span><?php the_author() ?> | <?php echo the_category(", ") ?></span>
+			<p><?php the_content() ?></p>
+		<?php else: ?>
+		
+			<h3><?php the_title() ?></h3>
+			<span><?php the_author() ?> | <?php echo the_category(", ") ?></span>
+			<p><?php the_excerpt() ?></p>
+			
+		<?php endif; ?>
+	</article>
+	
+<?php
+	endwhile;
+?>
+
+
+
+if ( has_post_format( 'image' )) {
+  echo 'this is the image format';
+}
+
+if ( has_post_format( 'standard' )) {
+  echo 'this is the image format';
+}
+

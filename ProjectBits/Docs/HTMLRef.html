@@ -1,0 +1,826 @@
+
+
+<!--...-->	<!--Defines a comment
+<!DOCTYPE> 	Defines the document type
+<a>			Defines a hyperlink
+<abbr>		Defines an abbreviation or an acronym
+<acronym>	Not supported in HTML5. Use <abbr> instead. Defines an acronym
+<address>	Defines contact information for the author/owner of a document
+<applet>	Not supported in HTML5. Use <embed> or <object> instead. Defines an embedded applet
+<area>		Defines an area inside an image-map
+<article>	Defines an article
+<aside>		Defines content aside from the page content
+<audio>		Defines sound content
+<b>			Defines bold text
+<base>		Specifies the base URL/target for all relative URLs in a document
+<basefont>	Not supported in HTML5. Use CSS instead. Specifies a default color, size, and font for all text in a document
+<bdi>		Isolates a part of text that might be formatted in a different direction from other text outside it
+<bdo>		Overrides the current text direction
+<big>		Not supported in HTML5. Use CSS instead. Defines big text
+<blockquote>Defines a section that is quoted from another source
+<body>		Defines the document's body
+<br>		Defines a single line break
+<canvas>	Used to draw graphics, on the fly, via scripting (usually JavaScript)
+<caption>	Defines a table caption
+<center>	Not supported in HTML5. Use CSS instead. Defines centered text
+<cite>		Defines the title of a work
+<code>		Defines a piece of computer code
+<col>		Specifies column properties for each column within a <colgroup> element 
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<dd>		Defines a description/value of a term in a description list
+<del>		Defines text that has been deleted from a document
+<details>	Defines additional details that the user can view or hide
+<dfn>		Represents the defining instance of a term
+<dialog>	Defines a dialog box or window
+<dir>		Not supported in HTML5. Use <ul> instead. Defines a directory list
+<div>		Defines a section in a document
+<dl>		Defines a description list
+<dt>		Defines a term/name in a description list
+<em>		Defines emphasized text 
+<embed>		Defines a container for an external (non-HTML) application
+<figcaption>Defines a caption for a <figure> element
+<figure>	Specifies self-contained content
+<font>		Not supported in HTML5. Use CSS instead. Defines font, color, and size for text
+<footer>	Defines a footer for a document or section
+<frame>		Not supported in HTML5. Defines a window (a frame) in a frameset
+<frameset>	Not supported in HTML5. Defines a set of frames
+<h1> to <h6>Defines HTML headings
+<head>		Defines information about the document
+<header>	Defines a header for a document or section
+<hr>		Defines a thematic change in the content
+<html>		Defines the root of an HTML document
+<i>			Defines a part of text in an alternate voice or mood
+<iframe>	Defines an inline frame
+<img>		Defines an image
+<ins>		Defines a text that has been inserted into a document
+<kbd>		Defines keyboard input
+<li>		Defines a list item
+<link>		Defines the relationship between a document and an external resource (most used to link to style sheets)
+<main>		Specifies the main content of a document
+<map>		Defines a client-side image-map
+<mark>		Defines marked/highlighted text
+<menu>		Defines a list/menu of commands
+<menuitem>	Defines a command/menu item that the user can invoke from a popup menu
+<meta>		Defines metadata about an HTML document
+<meter>		Defines a scalar measurement within a known range (a gauge)
+<nav>		Defines navigation links
+<noframes>	Not supported in HTML5. Defines an alternate content for users that do not support frames
+<noscript>	Defines an alternate content for users that do not support client-side scripts
+<object>	Defines an embedded object
+<ol>		Defines an ordered list
+<p>			Defines a paragraph
+<param>		Defines a parameter for an object
+<picture>	Defines a container for multiple image resources
+<pre>		Defines preformatted text
+<progress>	Represents the progress of a task
+<q>			Defines a short quotation
+<rp>		Defines what to show in browsers that do not support ruby annotations
+<rt>		Defines an explanation/pronunciation of characters (for East Asian typography)
+<ruby>		Defines a ruby annotation (for East Asian typography)
+<s>			Defines text that is no longer correct
+<samp>		Defines sample output from a computer program
+<script>	Defines a client-side script
+<section>	Defines a section in a document
+<small>		Defines smaller text
+<source>	Defines multiple media resources for media elements (<video> and <audio>)
+<span>		Defines a section in a document
+<strike>	Not supported in HTML5. Use <del> or <s> instead. Defines strikethrough text
+<strong>	Defines important text
+<style>		Defines style information for a document
+<sub>		Defines subscripted text
+<summary>	Defines a visible heading for a <details> element
+<sup>		Defines superscripted text
+<table>		Defines a table
+<tbody>		Groups the body content in a table
+<td>		Defines a cell in a table
+<tfoot>		Groups the footer content in a table
+<th>		Defines a header cell in a table
+<thead>		Groups the header content in a table
+<time>		Defines a date/time
+<title>		Defines a title for the document
+<tr>		Defines a row in a table
+<track>		Defines text tracks for media elements (<video> and <audio>)
+<tt>		Not supported in HTML5. Use CSS instead. Defines teletype text
+<u>			Defines text that should be stylistically different from normal text
+<ul>		Defines an unordered list
+<var>		Defines a variable
+<video>		Defines a video or movie
+<wbr>		Defines a possible line-break
+
+
+
+
+<form>		Defines an HTML form for user input
+<input>		Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>		Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+<datalist>	Specifies a list of pre-defined options for input controls
+<keygen>	Defines a key-pair generator field (for forms)
+<output>	Defines the result of a calculation
+
+
+
+
+
+accept		<input>	Specifies the types of files that the server accepts (only for type="file")
+accept-charset	<form>	Specifies the character encodings that are to be used for the form submission
+accesskey	Global Attributes	Specifies a shortcut key to activate/focus an element
+action		<form>	Specifies where to send the form-data when a form is submitted
+alt			<area>, <img>, <input>	Specifies an alternate text when the original element fails to display
+async		<script>	Specifies that the script is executed asynchronously (only for external scripts)
+autocomplete	<form>, <input>	Specifies whether the <form> or the <input> element should have autocomplete enabled
+autofocus	<button>, <input>, <keygen>, <select>, <textarea>	Specifies that the element should automatically get focus when the page loads
+autoplay	<audio>, <video>	Specifies that the audio/video will start playing as soon as it is ready
+challenge	<keygen>	Specifies that the value of the <keygen> element should be challenged when submitted
+charset		<meta>, <script>	Specifies the character encoding
+checked		<input>	Specifies that an <input> element should be pre-selected when the page loads (for type="checkbox" or type="radio")
+cite		<blockquote>, <del>, <ins>, <q>	Specifies a URL which explains the quote/deleted/inserted text
+class		Global Attributes	Specifies one or more classnames for an element (refers to a class in a style sheet)
+color		Not supported in HTML 5.	Specifies the text color of an element. Use CSS instead
+cols		<textarea>	Specifies the visible width of a text area
+colspan		<td>, <th>	Specifies the number of columns a table cell should span
+content		<meta>	Gives the value associated with the http-equiv or name attribute
+contenteditable	Global Attributes	Specifies whether the content of an element is editable or not
+contextmenu	Global Attributes	Specifies a context menu for an element. The context menu appears when a user right-clicks on the element
+controls	<audio>, <video>	Specifies that audio/video controls should be displayed (such as a play/pause button etc)
+coords		<area>	Specifies the coordinates of the area
+data		<object>	Specifies the URL of the resource to be used by the object
+data-*		Global Attributes	Used to store custom data private to the page or application
+datetime	<del>, <ins>, <time>	Specifies the date and time
+default		<track>	Specifies that the track is to be enabled if the user's preferences do not indicate that another track would be more appropriate
+defer		<script>	Specifies that the script is executed when the page has finished parsing (only for external scripts)
+dir			Global Attributes	Specifies the text direction for the content in an element
+dirname		<input>, <textarea>	Specifies that the text direction will be submitted
+disabled	<button>, <fieldset>, <input>, <keygen>, <optgroup>, <option>, <select>, <textarea>	Specifies that the specified element/group of elements should be disabled
+download	<a>, <area>	Specifies that the target will be downloaded when a user clicks on the hyperlink
+draggable	Global Attributes	Specifies whether an element is draggable or not
+dropzone	Global Attributes	Specifies whether the dragged data is copied, moved, or linked, when dropped
+enctype		<form>	Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+for			<label>, <output>	Specifies which form element(s) a label/calculation is bound to
+form		<button>, <fieldset>, <input>, <keygen>, <label>, <meter>, <object>, <output>, <select>, <textarea>	Specifies the name of the form the element belongs to
+formaction	<button>, <input>	Specifies where to send the form-data when a form is submitted. Only for type="submit"
+headers		<td>, <th>	Specifies one or more headers cells a cell is related to
+height		<canvas>, <embed>, <iframe>, <img>, <input>, <object>, <video>	Specifies the height of the element
+hidden		Global Attributes	Specifies that an element is not yet, or is no longer, relevant
+high		<meter>	Specifies the range that is considered to be a high value
+href		<a>, <area>, <base>, <link>	Specifies the URL of the page the link goes to
+hreflang	<a>, <area>, <link>	Specifies the language of the linked document
+http-equiv	<meta>	Provides an HTTP header for the information/value of the content attribute
+id			Global Attributes	Specifies a unique id for an element
+ismap		<img>	Specifies an image as a server-side image-map
+keytype		<keygen>	Specifies the security algorithm of the key
+kind		<track>	Specifies the kind of text track
+label		<track>, <option>, <optgroup>	Specifies the title of the text track
+lang		Global Attributes	Specifies the language of the element's content
+list		<input>	Refers to a <datalist> element that contains pre-defined options for an <input> element
+loop		<audio>, <video>	Specifies that the audio/video will start over again, every time it is finished
+low			<meter>	Specifies the range that is considered to be a low value
+max			<input>, <meter>, <progress>	Specifies the maximum value
+maxlength	<input>, <textarea>	Specifies the maximum number of characters allowed in an element
+media		<a>, <area>, <link>, <source>, <style>	Specifies what media/device the linked document is optimized for
+method		<form>	Specifies the HTTP method to use when sending form-data
+min			<input>, <meter>	Specifies a minimum value
+multiple	<input>, <select>	Specifies that a user can enter more than one value
+muted		<video>, <audio>	Specifies that the audio output of the video should be muted
+name		<button>, <fieldset>, <form>, <iframe>, <input>, <keygen>, <map>, <meta>, <object>, <output>, <param>, <select>, <textarea>	Specifies the name of the element
+novalidate	<form>	Specifies that the form should not be validated when submitted
+onabort		<audio>, <embed>, <img>, <object>, <video>	Script to be run on abort
+onafterprint	<body>	Script to be run after the document is printed
+onbeforeprint	<body>	Script to be run before the document is printed
+onbeforeunload	<body>	Script to be run when the document is about to be unloaded
+onblur		All visible elements.	Script to be run when the element loses focus
+oncanplay	<audio>, <embed>, <object>, <video>	Script to be run when a file is ready to start playing (when it has buffered enough to begin)
+oncanplaythrough	<audio>, <video>	Script to be run when a file can be played all the way to the end without pausing for buffering
+onchange	All visible elements.	Script to be run when the value of the element is changed
+onclick		All visible elements.	Script to be run when the element is being clicked
+oncontextmenu	All visible elements.	Script to be run when a context menu is triggered
+oncopy		All visible elements.	Script to be run when the content of the element is being copied
+oncuechange	<track>	Script to be run when the cue changes in a <track> element
+oncut		All visible elements.	Script to be run when the content of the element is being cut
+ondblclick	All visible elements.	Script to be run when the element is being double-clicked
+ondrag		All visible elements.	Script to be run when the element is being dragged
+ondragend	All visible elements.	Script to be run at the end of a drag operation
+ondragenter	All visible elements.	Script to be run when an element has been dragged to a valid drop target
+ondragleave	All visible elements.	Script to be run when an element leaves a valid drop target
+ondragover	All visible elements.	Script to be run when an element is being dragged over a valid drop target
+ondragstart	All visible elements.	Script to be run at the start of a drag operation
+ondrop		All visible elements.	Script to be run when dragged element is being dropped
+ondurationchange	<audio>, <video>	Script to be run when the length of the media changes
+onemptied	<audio>, <video>	Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects)
+onended		<audio>, <video>	Script to be run when the media has reach the end (a useful event for messages like "thanks for listening")
+onerror		<audio>, <body>, <embed>, <img>, <object>, <script>, <style>, <video>	Script to be run when an error occurs
+onfocus		All visible elements.	Script to be run when the element gets focus
+onhashchange	<body>	Script to be run when there has been changes to the anchor part of the a URL
+oninput		All visible elements.	Script to be run when the element gets user input
+oninvalid	All visible elements.	Script to be run when the element is invalid
+onkeydown	All visible elements.	Script to be run when a user is pressing a key
+onkeypress	All visible elements.	Script to be run when a user presses a key
+onkeyup		All visible elements.	Script to be run when a user releases a key
+onload		<body>, <iframe>, <img>, <input>, <link>, <script>, <style>	Script to be run when the element is finished loading
+onloadeddata	<audio>, <video>	Script to be run when media data is loaded
+onloadedmetadata	<audio>, <video>	Script to be run when meta data (like dimensions and duration) are loaded
+onloadstart	<audio>, <video>	Script to be run just as the file begins to load before anything is actually loaded
+onmousedown	All visible elements.	Script to be run when a mouse button is pressed down on an element
+onmousemove	All visible elements.	Script to be run as long as the  mouse pointer is moving over an element
+onmouseout	All visible elements.	Script to be run when a mouse pointer moves out of an element
+onmouseover	All visible elements.	Script to be run when a mouse pointer moves over an element
+onmouseup	All visible elements.	Script to be run when a mouse button is released over an element
+onmousewheel	All visible elements.	Script to be run when a mouse wheel is being scrolled over an element
+onoffline	<body>	Script to be run when the browser starts to work offline
+ononline	<body>	Script to be run when the browser starts to work online
+onpagehide	<body>	Script to be run when a user navigates away from a page
+onpageshow	<body>	Script to be run when a user navigates to a page
+onpaste		All visible elements.	Script to be run when the user pastes some content in an element
+onpause		<audio>, <video>	Script to be run when the media is paused either by the user or programmatically
+onplay		<audio>, <video>	Script to be run when the media is ready to start playing
+onplaying	<audio>, <video>	Script to be run when the media actually has started playing.
+onpopstate	<body>	Script to be run when the window's history changes.
+onprogress	<audio>, <video>	Script to be run when the browser is in the process of getting the media data
+onratechange	<audio>, <video>	Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode).
+onreset		<form>	Script to be run when a reset button in a form is clicked.
+onresize	<body>	Script to be run when the browser window is being resized.
+onscroll	All visible elements.	Script to be run when an element's scrollbar is being scrolled
+onsearch	<input>	Script to be run when the user writes something in a search field (for <input="search">)
+onseeked	<audio>, <video>	Script to be run when the seeking attribute is set to false indicating that seeking has ended
+onseeking	<audio>, <video>	Script to be run when the seeking attribute is set to true indicating that seeking is active
+onselect	All visible elements.	Script to be run when the element gets selected
+onshow		<menu>	Script to be run when a <menu> element is shown as a context menu
+onstalled	<audio>, <video>	Script to be run when the browser is unable to fetch the media data for whatever reason
+onstorage	<body>	Script to be run when a Web Storage area is updated
+onsubmit	<form>	Script to be run when a form is submitted
+onsuspend	<audio>, <video>	Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason
+ontimeupdate	<audio>, <video>	Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media)
+ontoggle	<details>	Script to be run when the user opens or closes the <details> element
+onunload	<body>	Script to be run when a page has unloaded (or the browser window has been closed)
+onvolumechange		<audio>, <video>	Script to be run each time the volume of a video/audio has been changed
+onwaiting	<audio>, <video>	Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data)
+onwheel		All visible elements.	Script to be run when the mouse wheel rolls up or down over an element
+open		<details>	Specifies that the details should be visible (open) to the user
+optimum		<meter>	Specifies what value is the optimal value for the gauge
+pattern		<input>	Specifies a regular expression that an <input> element's value is checked against
+placeholder	<input>, <textarea>	Specifies a short hint that describes the expected value of the element
+poster		<video>	Specifies an image to be shown while the video is downloading, or until the user hits the play button
+preload		<audio>, <video>	Specifies if and how the author thinks the audio/video should be loaded when the page loads
+readonly	<input>, <textarea>	Specifies that the element is read-only
+rel			<a>, <area>, <link>	Specifies the relationship between the current document and the linked document
+required	<input>, <select>, <textarea>	Specifies that the element must be filled out before submitting the form
+reversed	<ol>	Specifies that the list order should be descending (9,8,7...)
+rows		<textarea>	Specifies the visible number of lines in a text area
+rowspan		<td>, <th>	Specifies the number of rows a table cell should span
+sandbox		<iframe>	Enables an extra set of restrictions for the content in an <iframe>
+scope		<th>	Specifies whether a header cell is a header for a column, row, or group of columns or rows
+scoped		<style>	Specifies that the styles only apply to this element's parent element and that element's child elements
+selected	<option>	Specifies that an option should be pre-selected when the page loads
+shape		<area>	Specifies the shape of the area
+size		<input>, <select>	Specifies the width, in characters (for <input>) or specifies the number of visible options (for <select>)
+sizes		<img>, <link>, <source>	Specifies the size of the linked resource
+span		<col>, <colgroup>	Specifies the number of columns to span
+spellcheck	Global Attributes	Specifies whether the element is to have its spelling and grammar checked or not
+src			<audio>, <embed>, <iframe>, <img>, <input>, <script>, <source>, <track>, <video>	Specifies the URL of the media file
+srcdoc		<iframe>	Specifies the HTML content of the page to show in the <iframe>
+srclang		<track>	Specifies the language of the track text data (required if kind="subtitles")
+srcset		<img>, <source>	Specifies the URL of the image to use in different situations
+start		<ol>	Specifies the start value of an ordered list
+step		<input>	Specifies the legal number intervals for an input field
+style		Global Attributes	Specifies an inline CSS style for an element
+tabindex	Global Attributes	Specifies the tabbing order of an element
+target		<a>, <area>, <base>, <form>	Specifies the target for where to open the linked document or where to submit the form
+title		Global Attributes	Specifies extra information about an element
+translate	Global Attributes	Specifies whether the content of an element should be translated or not
+type		<button>, <embed>, <input>, <link>, <menu>, <object>, <script>, <source>, <style>	Specifies the type of element
+usemap		<img>, <object>	Specifies an image as a client-side image-map
+value		<button>, <input>, <li>, <option>, <meter>, <progress>, <param>	Specifies the value of the element
+width		<canvas>, <embed>, <iframe>, <img>, <input>, <object>, <video>	Specifies the width of the element
+wrap		<textarea>	Specifies how the text in a text area is to be wrapped when submitted in a form
+
+Built Examples
+
+-->
+
+
+An HTML form with two submit buttons, with different actions:
+			<input type="submit" formaction="/action_page2.php" value="Submit as admin">
+
+
+  
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> 
+</form>
+
+
+<form action="/action_page.php">
+  Username: <input type="text" name="user">
+  Encryption: <keygen name="security">
+  <input type="submit">
+</form>
+
+
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+An input field located outside the HTML form (but still a part of the form):
+
+<form action="/action_page.php" id="form1">
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+</form>
+
+Last name: <input type="text" name="lname" form="form1">
+
+Send form-data that is default encoded (the first submit button), and encoded as "multipart/form-data" (the second submit button):
+
+<form action="/action_page_binary.asp" method="post">
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+</form>
+
+
+<form action="/action_page.php" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formmethod="post" formaction="action_page_post.asp"
+  value="Submit using POST">
+</form>
+
+A form with two submit buttons (with and without validation):
+
+<form action="/action_page.php">
+  E-mail: <input type="email" name="userid"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formnovalidate value="Submit without validation">
+</form>
+
+
+A form with two submit buttons, with different target windows:
+
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit as normal">
+  <input type="submit" formtarget="_blank"
+  value="Submit to a new window">
+</form>
+
+
+
+<input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+
+
+The Action Attribute
+The action attribute defines the action to be performed when the form is submitted.
+
+Normally, the form data is sent to a web page on the server when the user clicks on the submit button.
+
+In the example above, the form data is sent to a page on the server called "/action_page.php". This page contains a server-side script that handles the form data:
+
+If the action attribute is omitted, the action is set to the current page.
+
+The Method Attribute
+The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data:
+
+When to Use GET?
+The default method when submitting form data is GET.
+
+However, when GET is used, the submitted form data will be visible in the page address field:
+
+Note: GET must NOT be used when sending sensitive information! GET is best suited for short, non-sensitive, amounts of data, because it has size limitations too.
+
+
+When to Use POST?
+Always use POST if the form data contains sensitive or personal information. The POST method does not display the submitted form data in the page address field.
+
+POST has no size limitations, and can be used to send large amounts of data.
+
+The Name Attribute
+Each input field must have a name attribute to be submitted.
+
+If the name attribute is omitted, the data of that input field will not be sent at all.
+
+
+Attribute	Description
+accept-charset	Specifies the charset used in the submitted form (default: the page charset).
+action	Specifies an address (url) where to submit the form (default: the submitting page).
+autocomplete	Specifies if the browser should autocomplete the form (default: on).
+enctype	Specifies the encoding of the submitted data (default: is url-encoded).
+method	Specifies the HTTP method used when submitting the form (default: GET).
+name	Specifies a name used to identify the form (for DOM usage: document.forms.name).
+novalidate	Specifies that the browser should not validate the form.
+target	Specifies the target of the address in the action attribute (default: _self).
+
+
+
+
+
+
+
+
+The most important form element is the <input> element.
+
+The <input> element can be displayed in several ways, depending on the type attribute.
+
+All the different input types are covered in the next chapter.
+
+The <select> Element
+The <select> element defines a drop-down list:
+
+The <option> elements defines an option that can be selected.
+
+By default, the first item in the drop-down list is selected.
+
+To define a pre-selected option, add the selected attribute to the option:
+
+
+
+
+
+
+
+The rows attribute specifies the visible number of lines in a text area.
+
+The cols attribute specifies the visible width of a text area.
+
+
+
+Input Type Submit
+defines a button for submitting form data to a form-handler.
+
+The form-handler is typically a server page with a script for processing input data.
+
+The form-handler is specified in the form's action attribute:
+
+
+
+
+
+
+
+
+
+HTML5 <datalist> Element
+The <datalist> element specifies a list of pre-defined options for an <input> element.
+
+Users will see a drop-down list of the pre-defined options as they input data.
+
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+
+
+
+
+
+
+HTML5 <keygen> Element
+The purpose of the <keygen> element is to provide a secure way to authenticate users.
+
+The <keygen> element specifies a key-pair generator field in a form.
+
+When the form is submitted, two keys are generated, one private and one public.
+
+The private key is stored locally, and the public key is sent to the server.
+
+The public key could be used to generate a client certificate to authenticate the user in the future.
+
+
+
+
+
+
+The <output> element represents the result of a calculation (like one performed by a script).
+
+
+
+
+
+
+
+
+
+If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.
+
+
+
+
+
+Depending on browser support, a color picker can show up in the input field.
+
+  Select your favorite color:
+  
+
+
+Depending on browser support, a date picker can show up in the input field.
+
+  Birthday:
+  
+
+
+
+You can also add restrictions to dates:
+
+  Enter a date before 1980-01-01:
+
+  Enter a date after 2000-01-01:
+  
+
+
+specifies a date and time input field, with no time zone.
+
+Depending on browser support, a date picker can show up in the input field.
+
+  Birthday (date and time):
+  
+
+  E-mail:
+  
+Depending on browser support, the e-mail address can be automatically validated when submitted.
+
+
+  Birthday (month and year):
+
+
+Input Restrictions
+
+disabled	Specifies that an input field should be disabled
+max	Specifies the maximum value for an input field
+maxlength	Specifies the maximum number of character for an input field
+min	Specifies the minimum value for an input field
+pattern	Specifies a regular expression to check the input value against
+readonly	Specifies that an input field is read only (cannot be changed)
+required	Specifies that an input field is required (must be filled out)
+size	Specifies the width (in characters) of an input field
+step	Specifies the legal number intervals for an input field
+value	Specifies the default value for an input field
+
+  Quantity:
+  
+
+
+
+The  defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes:
+
+
+
+  Search Google:
+  
+
+a search field behaves like a regular text field).
+
+
+  Select a time:
+  
+
+Depending on browser support, a time picker can show up in the input field.
+
+
+
+The  is used for input fields that should contain a URL address.
+
+Depending on browser support, the url field can be automatically validated when submitted.
+
+Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.
+
+  Add your homepage:
+
+
+Select a week:
+	
+
+
+  
+  
+The value attribute specifies the initial value for an input field:
+
+readonly
+The readonly Attribute
+The readonly attribute specifies that the input field is read only (cannot be changed):
+
+disabled
+A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form:
+
+
+The size attribute specifies the size (in characters) for the input field:
+
+
+The maxlength attribute specifies the maximum allowed length for the input field:
+
+With a maxlength attribute, the input field will not accept more than the allowed number of characters.
+
+The maxlength attribute does not provide any feedback. If you want to alert the user, you must write JavaScript code.
+
+Note: Input restrictions are not foolproof, and JavaScript provides many ways to add illegal input. To safely restrict input, it must be checked by the receiver (the server) as well!
+
+With a maxlength attribute, the input field will not accept more than the allowed number of characters.
+
+The maxlength attribute does not provide any feedback. If you want to alert the user, you must write JavaScript code.
+
+Note: Input restrictions are not foolproof, and JavaScript provides many ways to add illegal input. To safely restrict input, it must be checked by the receiver (the server) as well!
+
+In some browsers you may need to activate the autocomplete function for this to work.
+
+
+
+
+The novalidate Attribute
+The novalidate attribute is a <form> attribute.
+
+When present, novalidate specifies that the form data should not be validated when submitted.
+
+Indicates that the form is not to be validated on submit:
+
+
+
+The autofocus Attribute
+The autofocus attribute specifies that the input field should automatically get focus when the page loads.
+
+Let the "First name" input field automatically get focus when the page loads:
+
+
+
+
+The form Attribute
+The form attribute specifies one or more forms an <input> element belongs to.
+
+Tip: To refer to more than one form, use a space-separated list of form ids.
+
+
+
+
+The formaction Attribute
+The formaction attribute specifies the URL of a file that will process the input control when the form is submitted.
+
+The formaction attribute overrides the action attribute of the <form> element.
+
+The formaction attribute is used with type="submit" and type="image".
+
+
+
+The formenctype Attribute
+The formenctype attribute specifies how the form data should be encoded when submitted (only for forms with method="post").
+
+The formenctype attribute overrides the enctype attribute of the <form> element.
+
+The formenctype attribute is used with type="submit" and type="image".
+
+
+
+
+
+The formmethod attribute defines the HTTP method for sending form-data to the action URL.
+
+The formmethod attribute overrides the method attribute of the <form> element.
+
+The formmethod attribute can be used with type="submit" and type="image".
+
+The second submit button overrides the HTTP method of the form:
+
+
+
+
+
+The formnovalidate Attribute
+The formnovalidate attribute overrides the novalidate attribute of the <form> element.
+
+The formnovalidate attribute can be used with type="submit".
+
+
+
+
+
+The formtarget Attribute
+The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.
+
+The formtarget attribute overrides the target attribute of the <form> element.
+
+The formtarget attribute can be used with type="submit" and type="image".
+
+
+
+
+
+
+The height and width attributes specify the height and width of an  element.
+
+Always specify the size of images. If the browser does not know the size, the page will flicker while images load.
+
+Define an image as the submit button, with height and width attributes:
+
+The list attribute refers to a <datalist> element that contains pre-defined options for an <input> element.
+
+An <input> element with pre-defined values in a <datalist>:
+
+
+
+
+
+The min and max attributes specify the minimum and maximum values for an <input> element.
+
+The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.
+
+<input> elements with min and max values:
+
+
+
+
+The multiple Attribute
+The multiple attribute specifies that the user is allowed to enter more than one value in the <input> element.
+
+The multiple attribute works with the following input types: email, and file.
+
+A file upload field that accepts multiple values:
+
+
+
+
+
+
+The pattern Attribute
+The pattern attribute specifies a regular expression that the <input> element's value is checked against.
+
+The pattern attribute works with the following input types: text, search, url, tel, email, and password.
+
+Tip: Use the global title attribute to describe the pattern to help the user.
+
+Tip: Learn more about regular expressions in our JavaScript tutorial.
+
+OperaSafariChromeFirefoxInternet Explorer
+Example
+An input field that can contain only three letters (no numbers or special characters):
+
+
+
+
+
+The placeholder Attribute
+The placeholder attribute specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).
+
+The hint is displayed in the input field before the user enters a value.
+
+The placeholder attribute works with the following input types: text, search, url, tel, email, and password.
+
+An input field with a placeholder text:
+
+
+
+The required Attribute
+The required attribute specifies that an input field must be filled out before submitting the form.
+
+The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+
+A required input field:
+
+
+
+The step Attribute
+The step attribute specifies the legal number intervals for an <input> element.
+
+Example: if step="3", legal numbers could be -3, 0, 3, 6, etc.
+
+Tip: The step attribute can be used together with the max and min attributes to create a range of legal values.
+
+The step attribute works with the following input types: number, range, date, datetime-local, month, time and week.
+
+An input field with a specified legal number intervals:
+
+
+
+HTML Form and Input Elements
+Tag	Description
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+
+
+
+
+

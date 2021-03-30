@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cat Stats</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="catStats.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>CAT STATS!</h1>
+		</header>	
+		<main>	
+			<section id="selected-cat">
+				<h2 id="cat-banner">Select Your Cat</h2>
+				<div id="cat-container">
+					<div class="container-1">				
+						<div style="display:flex;">
+							<div class="no-border">
+								<h3 id="name"></h3>
+								<h4 id="type"></h4>
+								<h4 id="room"></h4>
+								<h4></h4>				
+								<ul id="toy-container">
+			
+								</ul>
+								<input type="checkbox" id="outdoors">
+								<label>Outdoors?</label>
+							</div>
+							<div id="cat-buttons">		
+								<div  class="no-border"><button id="pet">Pet the Kitty</button></div>
+								<div><button id="catnip">Cat Nip</button></div>	
+								<div><button id="feed">Feed Me!</button></div>		
+							</div>
+						</div>
+					</div>
+					<div>
+						<canvas id="meter" height="150px" width="150px"></canvas>
+					</div>
+					<div>
+						<canvas id="canvas" height="150px" width="150px"></canvas>
+					</div>
+				</div>
+				
+			</section>
+			
+			<section id="options">
+				
+				<div><select id="selector">
+					<option selected disabled hidden >here kitty kitty</option>
+				</select></div>
+				<div><button id="sort">Sort</button></div>
+				<div><button id="open-collars">Collars</button></div>
+				<div><button id="open-toybox">Toys</button></div>
+				<div><button id="adopt">Adopt</button></div>
+				<div><button id="go-shop">Shop</button></div>
+				
+			</section>
+			
+			<section id="sort-type">
+				<div><input type="radio" name="cat-filter" value="name"> Name</div>
+				<div><input type="radio" name="cat-filter" value="health"> Health</div>
+				<div><input type="radio" name="cat-filter" value="hunger"> Hunger</div>
+				<div><input type="radio" name="cat-filter" value="happiness"> Happiness</div>
+				<div><input type="radio" name="cat-filter" value="room"> Room</div>
+				
+			</section>
+			
+			<section id="room-section">
+				<canvas id="rooms-canvas" height="200px" width="300px"></canvas>
+			</section>
+			
+			<section id="resources">			
+				<div id="collar-drawer" <!--"style=display:none;"-->>
+					<ul id="collars">
+						
+					</ul>	
+				</div>
+				<div id="collar-controls" <!--"style=display:none;"-->>
+					Collar Name: <input id="name-collar" type="text" name="nameCollar"><br>
+					<button id="assign-collar">Assign to Selected Cat</button>
+					<button>Save to Drawer</button>
+					<button id="close">Close</button>
+				</div>
+				<div id="pantry-door" <!--"style=display:none;"-->>
+					<ul id="food">
+
+					</ul>
+				</div>
+				<div id="toybox" <!--"style=display:none;"-->>
+					<ul id="toys">
+
+					</ul>
+				</div>	
+				<div id="shelter" <!--"style=display:none;"-->>
+					<ul id="">
+
+					</ul>
+				</div>
+				<div id="shop" <!--"style=display:none;"-->>
+					<ul id="items">
+
+					</ul>
+				</div>	
+			</section>			
+		</main>	
+		<script src="catData.js" type="text/javascript"></script>
+		<script src="app.js" type="text/javascript"></script>
+	</body>
+</html>

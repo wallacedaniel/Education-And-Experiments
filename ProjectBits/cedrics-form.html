@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/cedrics-form.css" />
+  </head>
+  <body>  
+	<div class="container-fluid">
+		<div class="row">
+			<form id="reservation" class="col-12" action="" method="">
+				<h2>Book Your Reservation</h2>
+				
+				<!-- Change back to type submit -->
+				<div class="form-group">
+					<label for="fname-input">First Name</label>
+					<input class="form-control" type="text" name="fname" id="fname-input" maxlength="40" required> 
+				</div>
+				
+				<div class="form-group">
+					<label for="lname-input">Last Name</label>
+					<input class="form-control" type="text" name="lname" id="lname-input" maxlength="40" required> 
+				</div>	
+
+				<div class="form-group">
+					<label for="input-email">Email address</label>
+					<input class="form-control" type="email" name="email" id="email-input" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="phone-input">Phone Number</label>
+					<input class="form-control" type="text" name="phone" id="phone-input" maxlength="30" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="party-input">How many in your party?</label>
+					<input class="form-control" type="number" name="party" id="party-input" aria-describedby="res-msg" min="1" max="20" required>
+					<!--Attach the small to above-->
+					<small id="res-msg" class="form-text text-muted">To accomodate a group larger than 20, please call us at (555)987-6543.</small>
+				</div>
+				
+				<fieldset class="form-group">
+					<legend>Select your preferred dining location. <span>We can't guarantee you will be seated in your chosen location but we will try our best! We will let you know on confirmation.</span></legend>
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input selected" name="location" id="main-radio" value="main" checked>
+						Main Dining
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="location" id="front-radio" value="front">
+						Front Patio
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="location" id="back-radio" value="back">
+						Back Patio
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="location" id="loft-radio" value="loft">
+						The Loft
+					  </label>
+					</div>
+					<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="location" id="lounge-radio" value="lounge">
+						The Lounge
+					  </label>
+					</div>
+				</fieldset>
+				
+			
+			
+				Calendar schedule/reservation selector
+			
+				
+				<div class="form-group">
+					<label for="occasion-input">Would you like us to know about a special occasion?</label>
+					<textarea class="form-control form-textarea" name="occasion" id="occasion-input" rows="3" maxlength="500"></textarea>
+				</div>
+			
+				<div class="form-check">
+					<label class="form-check-label">
+					<input type="radio" class="form-check-input" name="newsletter-include" id="news-include-radio" value="news">
+					Would you like to sign up for our newsletter?
+				  </label>
+				</div>
+			
+				<button type="button" class="btn btn-primary"  id="reservation-submit">Submit</button>
+				
+				<!-- Confirmation Modal -->
+			
+			</form>
+			
+			
+			
+			
+			<form id="newsletter" class="col-12" action="" method="">
+			
+				<h2>Sign Up For Our Newsletter</h2>
+			
+				<div class="form-group">
+					<label for="news-fname-input">First Name</label>
+					<input class="form-control" type="text"  name="newsFname" id="news-fname-input" maxlength="40" required> 
+				</div>
+				
+				<div class="form-group">
+					<label for="news-lname-input">Last Name</label>
+					<input class="form-control" type="text" name="newsLname" id="news-lname-input" maxlength="40" required> 
+				</div>
+
+				<div class="form-group">
+					<label for="news-input-email">Email address</label>
+					<input class="form-control" type="email" name="newsEmail" id="news-input-email" required>
+				</div>
+				<!--back to submit-->
+				<button type="button" class="btn btn-primary" id="signUp-submit">Submit</button>
+				
+				<!-- Confirmation Modal -->
+			
+			</form>
+			
+		</div>
+    </div>
+	
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/cedrics-form-wkey.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+  </body>
+</html>
+
+

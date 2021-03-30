@@ -1,0 +1,297 @@
+/*// purple F2E2FF  #bb65ff;
+//blue #E2EEFF   rgb(38, 128, 255);#2680FF 
+//red #FFDEF2   rgb(255, 99, 194); #FF63C2
+//green #DDFFFC   #03e1cb;
+//yellow #FFFFE3   rgb(255, 238, 157);    #FFF49D*/ 
+
+body {
+	font-family: 'Indie Flower', cursive;
+	margin:0;
+}
+
+#cat-meter, #cat-canvas  {
+	border:2px solid #DDFFFC;
+	border-radius:4px;
+	background:#FFFFE3;
+	margin-top: 10px;
+    margin-right: 15px;
+    margin-left: 40px;	
+}
+
+#rooms-canvas {
+	border:1px solid #000000;
+	margin: 15px;
+	border-radius:4p;
+}
+
+h1 {
+	margin: 5px 0 0;
+	color:#FF63C2;
+	animation-name: title;
+    animation-duration: .5s;
+}
+
+@keyframes title {
+	0% {	
+	  transform: scale(0);
+	}
+	75% {
+	  transform: scale(1.05);
+	}
+	100% {
+	  transform: scale(1.0);
+	} 	
+}
+
+h2 {
+	margin: 0;
+    font-size: 22px;
+    padding: 10px 10px 5px;
+	text-align: center;
+	color: #03e1cb;
+}
+
+h3 {
+	font-size: 26px;
+    margin: 0;
+    padding: 14px 0 0 4px;
+	line-height: 1.4;
+}
+
+h4 {
+	margin: 0;
+    font-size: 20px;
+    padding: 0 5px;
+	line-height: 1.2;
+}
+
+ul {
+	margin: 0;
+	padding-left:5px;
+}
+
+li {
+	list-style-type: none;
+	font-size: 18px;
+}
+
+header {
+	text-align:center;
+	background: #F2E2FF;
+    padding: 10px;
+}
+
+main{
+	background:#E2EEFF;
+}
+
+#selected-cat {
+	background: #DDFFFC;
+	/*padding-bottom:10px;*/
+}
+
+#cat-container {
+	/*display:none;*/
+	background:#fadbff;
+	padding: 16px 20px;
+}
+
+.container-1 {
+	width:55% !important;
+	background: #FFF;
+    border: 2px solid #DDFFFC;
+    border-radius: 4px;
+	padding: 0 10px;
+}
+
+#cat-selector {
+	padding: 2px 5px;
+	border: 2px solid #DDFFFC;
+	border-radius:4px;
+}
+
+#cat-filters, #cat-options {
+	background: #E2EEFF;
+	display:flex;
+	font-size: 22px;
+    color: #bf00ed;
+}
+
+#cat-options {
+	padding:12px 10px;
+}
+
+#cat-filters {
+	padding: 0px 10px 10px;
+	/*display:none;*/
+}
+
+#cat-filters div{
+	width:20%;
+	text-align: center;
+}
+
+#cat-buttons{
+	background: none;
+	font-size: 22px;
+    color: #bf00ed;
+	width: 30%;
+	padding-top: 12px;	
+}
+
+#cat-buttons div{
+	width: 100%;
+}
+
+#cat-options div{
+	width:20%;
+	text-align: center;
+}
+
+#cat-options div:first-child{
+	width:60%;
+}
+
+#cat-buttons button, #cat-options button, #cat-selector{
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+	color: #bb65ff;
+	width: 95%;
+	background: #fff;
+}
+
+#cat-buttons button {
+	margin-bottom: 12px;
+	padding: 5px;
+	border: 2px solid #DDFFFC;
+    border-radius: 4px;
+	background: #E2EEFF;
+}
+
+#cat-options button {
+	padding: 2px 0;
+	border: 2px solid #DDFFFC;
+    border-radius: 4px;
+}
+
+#room-section {
+	background: #F2E2FF;
+	padding: 10px 10px;
+}
+
+#resources {
+}
+
+#collar-drawer {
+	padding: 10px;
+	background:#FFDEF2;
+	position: absolute;
+    bottom: 206px;
+	right:10%;
+	border-radius: 4px;
+	animation-name: collarDrawer;
+    animation-duration: .5s;
+}
+
+@keyframes  collar-drawer {
+	0% {
+	  right:-10%;
+	}
+	100% {
+	  right:10%;
+	} 	
+}
+
+#collars {
+	text-align:center;
+	font-size:20px;
+	padding: 10px 30px;
+}
+
+#pantry-door {
+	padding: 10px;
+	text-align:center;
+	font-size:20px;
+	background:#FFDEF2;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+	animation-name: pantryDoor;
+    animation-duration: .5s;
+}
+
+@keyframes  pantryDoor {
+	0% {
+	  bottom: -125px;
+	}
+	100% {
+	  bottom: 0;
+	} 	
+}
+
+#pantry-shelf {
+	display:flex;
+}
+
+#toybox {
+	background:#FFFFE3;
+	position: absolute;
+    z-index: 10;
+    left: 15%;
+    bottom: 215px;
+	padding:20px;
+	border-radius:4px;
+	animation-name: toybox;
+    animation-duration: .5s;
+}
+
+@keyframes toybox {
+	0% {
+	  left: -45%;
+	}
+	100% {
+	  left: 15%;
+	} 	
+}
+    
+#toys{
+	display:flex;
+}
+
+#toy-items{
+	display:flex;
+}
+
+#toys li{
+	width:33.3%;
+	text-align:center;
+}
+
+#outdoors {
+	margin-top: 8px;
+}
+
+/* change name*/
+.no-border {
+	border:none !important;
+	width: 70%;
+}
+
+#catCanvas  {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
